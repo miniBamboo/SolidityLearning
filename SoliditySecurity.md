@@ -43,7 +43,7 @@ contract C {
 通过创建一个新的临时 memory 结构体，然后将它拷贝到 storage 中。  
 数组 Unintialised Storage Pointers 问题的正确解决方法是在声明局部变量 x 的时候，  
 同时对 x 进行初始化操作。
-'''  
+
 ``` solidity
 pragma solidity ^0.4.11;
 contract  testContract{
@@ -76,5 +76,5 @@ contract C {
         x.push(2);
     }
 }
-'''
+
 ```    
